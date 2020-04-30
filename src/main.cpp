@@ -52,7 +52,8 @@
 
 int
 main(int argc, char *argv[]) {
-    std::cout << "CatEye vAlpha" << std::endl;
+    const std::string greeting = "CatEye vAlpha";
+    std::cout << greeting << std::endl;
 
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0) {
         std::cerr << "SDL_init() error: " << SDL_GetError() << std::endl;
@@ -60,7 +61,7 @@ main(int argc, char *argv[]) {
     }
 
     SDL_Window *window = SDL_CreateWindow(
-        "SDL Test",
+        greeting.c_str(),
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
         640, 480,
