@@ -3,6 +3,8 @@ CatEye Raytracer
 
 An experimental CSG ray tracer.
 
+![demo image](./img/demo_00.png)
+
 Build on Windows
 ----------------
 
@@ -48,7 +50,7 @@ the most recent version. Don't forget to check the box to add git path to your
 
 After setting up a build environment, just clone and execute Scons:
 ```shell
-git clone http://example.com
+git clone https://github.com/eaymerich/cateye.git
 cd cateye
 scons
 ```
@@ -71,7 +73,7 @@ sudo apt install -y g++ libsdl2-dev scons git
 
 After setting up a build environment, just clone and execute Scons:
 ```bash
-git clone http://example.com
+git clone https://github.com/eaymerich/cateye.git
 cd cateye
 scons
 ```
