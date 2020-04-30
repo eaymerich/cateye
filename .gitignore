@@ -1,0 +1,7 @@
+# Ignore editor settings
+.vscode/
+
+# Ignore build artifacts
+build/
+.sconsign.dblite
+cateye.exe
