@@ -25,31 +25,6 @@
 #include "ConstructiveSolid.h"
 #include "Ball.h"
 
-// glm::vec3
-// shade(const Sphere &obj, const Ray &ray, const glm::dvec3 &light, double dist) {
-//     // ambient
-//     const glm::dvec3 ambient{0.1, 0.1, 0.1};
-
-//     // Diffuse
-//     auto point = ray.point(dist);
-//     auto normal = obj.normal(point);
-//     auto light_vector = glm::normalize(light - point);
-//     auto intensity = glm::dot(normal, light_vector);
-//     intensity = intensity >= 0.0 ? intensity : 0.0;
-//     intensity *= 0.6;
-
-//     // Specular
-//     auto reflect_vector = glm::reflect(-light_vector, normal);
-//     glm::dvec3 view_vector{0.0,0.0,-1.0};
-//     auto specular_intensity = glm::pow(glm::max(glm::dot(view_vector, reflect_vector), 0.0), 32);
-//     specular_intensity *= 0.3;
-
-//     intensity += specular_intensity;
-//     auto total = ambient + glm::dvec3{intensity, intensity, intensity};
-
-//     return total; //glm::clamp(total, glm::vec3{0.0, 0.0, 0.0}, glm::vec3{1.0, 1.0, 1.0});
-// }
-
 int
 main(int argc, char *argv[]) {
     const std::string greeting = "CatEye vAlpha";
