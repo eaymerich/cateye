@@ -14,7 +14,7 @@ VariantDir('build', 'src', duplicate=0)
 env = Environment(ENV=os.environ,
                   tools=['g++', 'gnulink'],
                   CXXFLAGS=cxx_flags,
-                  CPPPATH=['thirdparty'],
+                  CPPPATH=['third_party'],
                   LIBS=libs,
                   LINKFLAGS=link_flags)
 
